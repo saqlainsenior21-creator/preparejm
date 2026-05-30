@@ -1,0 +1,20 @@
+{
+  "name": "PrepareJM — Jamaica Emergency System",
+  "short_name": "PrepareJM",
+  "description": "Jamaica Disaster Preparedness & Emergency Alert System",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f1e3d",
+  "theme_color": "#1a3a6b",
+  "orientation": "portrait-primary",
+  "categories": ["utilities", "social"],
+  "icons": [
+    { "src": "/logo192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/logo512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    { "name": "Check In Safe", "url": "/checkin", "icons": [{ "src": "/logo192.png", "sizes": "192x192" }] },
+    { "name": "Find Shelters", "url": "/shelters", "icons": [{ "src": "/logo192.png", "sizes": "192x192" }] }
+  ]
+}
