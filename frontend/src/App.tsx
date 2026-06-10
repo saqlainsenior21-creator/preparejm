@@ -11,6 +11,7 @@ import Evacuate from './pages/Evacuate';
 import CheckIn from './pages/CheckIn';
 import CoordDashboard from './pages/CoordDashboard';
 import AdminDashboard from './pages/AdminDashboard';
+import Partner from './pages/Partner';
 
 function PrivateRoute({ children, roles }: { children: React.ReactNode; roles?: string[] }) {
   const { user, isAuth } = useAuth();
@@ -28,6 +29,7 @@ function AppRoutes() {
         <Route path="/" element={isAuth ? <Navigate to="/dashboard" replace /> : <Landing />} />
         <Route path="/login" element={isAuth ? <Navigate to="/dashboard" replace /> : <Login />} />
         <Route path="/register" element={isAuth ? <Navigate to="/dashboard" replace /> : <Register />} />
+        <Route path="/partner" element={<Partner />} />
         <Route path="/shelters" element={<ShelterMap />} />
         <Route path="/evacuate" element={<Evacuate />} />
         <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
